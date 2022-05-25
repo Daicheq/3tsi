@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: 'Lato', sans-serif;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 10px 15px;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #000;
+	color: #ffffff;
+}
+header a:hover {
+	color: rgb(189, 94, 5);
+}
+.hero-img {
+	background-image: url('/img/hero-img-small.jpg');
+}
+@media (min-width: 576px) {
+	header {
+		flex-direction: row;
+	}
+	header a {
+		border-right: 3px rgb(189, 94, 5) solid;
+		transition: 0.3s;
+	}
+	header a:hover {
+		color: rgb(189, 94, 5);
+	}
+	header a:last-child {
+		border: 0;
+	}
+}
